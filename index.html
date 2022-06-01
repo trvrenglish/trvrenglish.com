@@ -31,7 +31,7 @@ h2 {
 }
 
 .sidenav > .active > a { 
-    color: #FE6B37; ; 
+    color: #FE6B37;
 }
 
 .sidenav a {
@@ -74,10 +74,22 @@ h2 {
   <a href="#Portraiture">Portraiture</a>
 </div>
 
-
 <div class="main">
   <h2>Trevor English</h2>
 </div>
    
+
+<script>
+    $(document).ready(function () {
+
+        $('ul.navbar-nav > li')
+                .click(function (e) {
+            $('ul.navbar-nav > li')
+                .removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
 </body>
 </html> 
