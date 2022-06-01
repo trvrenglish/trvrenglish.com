@@ -43,7 +43,6 @@ h2 {
 }
 
 .sidenav a:hover {
-  color: #FE6B37;
   font-family: dutch-mediaeval-pro, sans-serif;
   font-style: italic;
 }
@@ -71,9 +70,17 @@ h2 {
   <a href="#Portraiture">Portraiture</a>
 </div>
 
+
 <div class="main">
   <h2>Trevor English</h2>
 </div>
    
 </body>
 </html> 
+
+<script type="text/javascript">
+$("a").click(function(){
+    $("a").css("background-color","");
+    $(this).css("background-color","green");
+})
+</script>
