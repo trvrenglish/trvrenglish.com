@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
+    <link rel="stylesheet" href="https://use.typekit.net/rtl3xhb.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: dutch-mediaeval-pro, sans-serif;
+  background-color: black;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: dutch-mediaeval-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 20px;
+}
+
+p {
+  color: #FFFFFF;
+  font-family: dutch-mediaeval-pro, sans-serif;
+  font-style: normal;
+  font-size:smaller;
+  text-align:center;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+  font-size: 25px;
+  font-family: dutch-mediaeval-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  font-family: dutch-mediaeval-pro, sans-serif;
+  font-style: italic;
+}
+
+.nav .active { 
+  color: #FE6B37;
+  
+}
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:10px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+</style>
+</head>
+<body>
+
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Silverlight.html">Silverlight</a></li>
+    <li><a href="Western Digital.html" class='active'>Western Digital</a></li>
+    <li><a href="Adventure.html">Adventure</a></li>
+    <li><a href="Posters.html">Posters</a></li>
+  </ul>
+
+<script>
+  $(function() {
+    $('.sidenav a').click(function() {
+        $('.sidenav a').removeClass('active'); 
+        $(this).addClass('active');
+    });
+});
+</script>
+</body>
+
+<div class="container">
+  <img src="Western Digital/newport1.png">
+  <img src="Western Digital/newport2.png">
+  <video src="Western Digital/equipo.mp4" autoplay loop muted></video>
+  <img src="Western Digital/indifferent.png">
+  <img src="Western Digital/somethingoutofnothing1.png">
+  <img src="Western Digital/somethingoutofnothing2.png">
+  <img src="Western Digital/catandmouse.png">
+  <img src="Western Digital/catandmouse2.png">
+  <img src="Western Digital/trvr-tego2-1.jpg">
+  <img src="Western Digital/trvr-tego2-2.jpg">
+  <img src="Western Digital/entzwei1.png">
+  <img src="Western Digital/entzweibook1.png">
+  <img src="Western Digital/matchmadeinheavenfinal.png">
+  <img src="Western Digital/intellogo.png">
+  <img src="Western Digital/intellogo2.png">
+  <img src="Western Digital/et1.png">
+  <img src="Western Digital/et2.png">
+  <img src="Western Digital/Bandana@4x.png">
+  <img src="Western Digital/iphone-xs.png">
+  <img src="Western Digital/castles.png">
+  <img src="Western Digital/frozenjunglefinal.png">
+  <img src="Western Digital/jesus.png">
+  <img src="Western Digital/Bavaria@2x.png">
+  <img src="Western Digital/platinumcard@2x.png">
+  <img src="Western Digital/broncos3.png">
+  <img src="Western Digital/Metdatacard2@2x.png">
+  <img src="Western Digital/mickey.png">
+  <img src="Western Digital/cowgirlfinal.png">
+  <img src="Western Digital/cowboymusic2@2x.png">
+  <img src="Western Digital/cowboymusic@2x.png">
+  <img src="Western Digital/nietzchefinal.png">
+  <img src="Western Digital/Dragon1@2x.png">
+  <img src="Western Digital/Sharivari@2x.png">
+</div class="main">
+<div>
+  <p>Trevor English — Western Digital</p>
+</div>
+<style>
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+   
+    box-sizing: border-box;
+  }
+  
+  .container {
+    column-count: 3;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+
+  }
+</style>
+</html>

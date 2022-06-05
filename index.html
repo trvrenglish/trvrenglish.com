@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
     <link rel="stylesheet" href="https://use.typekit.net/rtl3xhb.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -27,11 +28,13 @@ h2 {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 320px;
 }
 
-.sidenav a:active { 
+.sidenav .active { 
     color: #FE6B37;
+   
+
 }
 
 .sidenav a {
@@ -42,14 +45,14 @@ h2 {
   color: #FFFFFF;
   font-family: dutch-mediaeval-pro, sans-serif;
   font-style: normal;
-  font-weight: 300; 
+  font-weight: 300;
 
 }
 
 .sidenav a:hover {
   font-family: dutch-mediaeval-pro, sans-serif;
   font-style: italic;
-  color: #FE6B37;
+
 }
 
 .main {
@@ -62,35 +65,33 @@ h2 {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 </style>
 </head>
 <body>
+  
 
 <div class="sidenav">
-  <a href="#Silverlight">Silverlight</a>
-  <a href="#Frostwalk">Frostwalk</a>
-  <a href="#Compliments">Compliments</a>
-  <a href="#Prints">Prints</a>
-  <a href="#Adventure">Adventure</a>
-  <a href="#Portraiture">Portraiture</a>
+  <a href="Home.html" class='active'>Home</a>
+  <a href="Silverlight.html">Silverlight</a>
+  <a href="Western Digital.html">Western Digital</a>
+  <a href="Adventure.html">Adventure</a>
+  <a href="Posters.html">Posters</a>
 </div>
-
-<div class="main">
-  <h2>Trevor English</h2>
-</div>
-   
 
 <script>
-    $(document).ready(function () {
-
-        $('ul.navbar-nav > li')
-                .click(function (e) {
-            $('ul.navbar-nav > li')
-                .removeClass('active');
-            $(this).addClass('active');
-        });
+  $(function() {
+    $('.sidenav a').click(function() {
+        $('.sidenav a').removeClass('active'); 
+        $(this).addClass('active');
     });
+});
 </script>
 
+<div class="main">
+  <img src="Assets/TrevorEnglish.png" height="auto" width="40%" align="right">
+  <img src="Assets/banner.png" height="auto" width="100%">
+</div>
+
 </body>
-</html> 
+</html>
